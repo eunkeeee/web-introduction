@@ -112,3 +112,14 @@ th {
 .best-url {
   text-align: center;
 }
+
+.guest-book {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.movie-type-selection {
+  display: flex;
+  flex-direction: column;
+}

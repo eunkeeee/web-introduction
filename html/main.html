@@ -139,26 +139,43 @@
     <hr />
 
     <h1>깃짱네 방명록</h1>
-    <form name="guest-book" method="get">
-      <label for="nickname">닉네임: </label>
-      <input type="text" id="nickname" required minlength="2" />
-      <label for="name">이름: </label>
-      <input type="text" id="name" minlength="2" maxlength="5" />
+    <form class="guest-book" name="guest-book" method="get">
+      <div>
+        <label for="nickname">닉네임: </label>
+        <input type="text" id="nickname" required minlength="2" />
+      </div>
+      <div>
+        <label for="name">이름: </label>
+        <input type="text" id="name" minlength="2" maxlength="5" />
+      </div>
       <br />
       <label for="movie-type">본인 취향 영화</label>
-      <br />
-      <input type="checkbox" name="move-type" />
-      <span>거침없이 하이킥</span>
-      <input type="checkbox" name="move-type" />
-      <span>한자와나오키</span>
-      <input type="checkbox" name="move-type" />
-      <span>리갈하이</span>
-      <input type="checkbox" name="move-type" />
-      <span>심야식당</span>
-      <input type="checkbox" name="move-type" />
-      <span>하츠코이(First Love)</span>
-      <input type="checkbox" name="move-type" />
-      <span>보기에 존재하지 않음.</span>
+      <div class="movie-type-selection">
+        <div>
+          <input type="checkbox" name="move-type" />
+          <span>거침없이 하이킥</span>
+        </div>
+        <div>
+          <input type="checkbox" name="move-type" id="type1" />
+          <span>한자와나오키</span>
+        </div>
+        <div>
+          <input type="checkbox" name="move-type" id="type2" />
+          <span>리갈하이</span>
+        </div>
+        <div>
+          <input type="checkbox" name="move-type" id="type3" />
+          <span>심야식당</span>
+        </div>
+        <div>
+          <input type="checkbox" name="move-type" id="type4" />
+          <span>하츠코이(First Love)</span>
+        </div>
+      </div>
+      <div class="submit-button">
+        <input type="submit" value="등록" />
+        <input type="submit" value="취소" />
+      </div>
     </form>
   </body>
 </html>
