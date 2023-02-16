@@ -45,15 +45,26 @@ b {
 
 .main-profile {
   display: flex;
-  flex-direction: column;
   gap: 10px;
 }
+
+.profile-img {
+  width: 150px;
+  height: auto;
+}
+
 .main-title {
   font-size: 50px;
   margin: 15px;
   font-weight: 700;
 }
 
+.main-profile-description {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+}
 .best-table {
   width: 100%;
   border: 1px solid var(--font-color);
