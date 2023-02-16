@@ -10,11 +10,20 @@ body {
 }
 
 .main-screen {
-  padding: 30px 30px;
+  padding: 50px 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.main-title {
+  align-self: center;
+  color: var(--font-color);
+  background-color: var(--title-color);
 }
 
 .best-poster-img {
-  width: 150px;
+  width: 120px;
   height: auto;
 }
 
@@ -23,10 +32,68 @@ h1 {
   margin: 15px 0px;
   font-weight: 600;
   color: var(--title-color);
+  background-color: var(--font-color);
 }
 
+span {
+  line-height: 18px;
+}
+
+b {
+  font-weight: 600;
+}
+
+.main-profile {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
 .main-title {
   font-size: 50px;
   margin: 15px;
   font-weight: 700;
+}
+
+.best-table {
+  width: 100%;
+  border: 1px solid var(--font-color);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+th,
+td {
+  border: 1px solid var(--font-color);
+  padding: 10px;
+  vertical-align: middle;
+  word-break: keep-all;
+}
+
+th {
+  font-size: 20px;
+  text-align: center;
+}
+
+.table-title {
+  width: 20%;
+}
+
+.table-poster {
+  width: 20%;
+}
+
+.table-intro {
+  width: 50%;
+}
+
+.table-url {
+  width: 10%;
+}
+
+.best-title {
+  text-align: center;
+}
+
+.best-poster {
+  text-align: center;
 }
